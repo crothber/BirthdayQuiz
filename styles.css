@@ -37,7 +37,7 @@ a {
 	margin-top: 20%;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 36;
+	font-size: 34;
 }
 
 .pulse a{
@@ -88,6 +88,7 @@ a {
 	font-family: proximanova-semibold;
 	font-size: 28;
 	margin: auto;
+	margin-top: 30px;
 	width: 70%;
 	max-width: 500px;
 	text-align: center;
