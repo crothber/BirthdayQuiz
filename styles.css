@@ -1,0 +1,94 @@
+@font-face {
+        font-family: proximanova-regular;
+        src: url("fonts/proximanova-regular-webfont.ttf");
+        src: url("fonts/proximanova-regular-webfont.woff");
+}
+@font-face {
+        font-family: proximanova-semibold;
+        src: url("fonts/proximanova-semibold-webfont.ttf");
+        src: url("fonts/proximanova-semibold-webfont.woff");
+}
+@font-face {
+        font-family: proximanova-bold;
+        src: url("fonts/proximanova-bold-webfont.ttf");
+        src: url("fonts/proximanova-bold-webfont.woff");
+}
+
+body {
+	font-family: proximanova-regular;
+	font-size: 22;
+	color: lightblue;
+	background: rgb(69,72,77);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 );
+}
+
+a {
+	text-decoration: none;
+}
+
+.intro a {
+	font-family: proximanova-bold;
+	color: lightblue;
+	text-align: center;
+	width: 300px;
+	margin-top: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 36;
+}
+
+.pulse a{
+  display: block;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(165, 93, 238), 0.2);
+  animation: pulse 1s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(165, 93, 238, 0.2);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 20px rgba(165, 93, 238, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(165, 93, 238, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(165, 93, 238, 0.2);
+    box-shadow: 0 0 0 0 rgba(165, 93, 238, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 20px rgba(165, 93, 238, 0);
+      box-shadow: 0 0 0 20px rgba(165, 93, 238, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(165, 93, 238, 0);
+      box-shadow: 0 0 0 0 rgba(165, 93, 238, 0);
+  }
+}
+
+.answer-box {
+	width: 100%;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.question {
+	font-family: proximanova-semibold;
+	font-size: 28;
+	margin: auto;
+	width: 70%;
+	max-width: 500px;
+	text-align: center;
+}
